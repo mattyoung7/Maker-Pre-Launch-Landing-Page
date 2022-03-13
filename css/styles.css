@@ -1,0 +1,608 @@
+:root {
+    --cyan: hsl(179,80%,58%);
+    --blue: hsl(206,84%,22%);
+    --grey: hsl(225,14%,53%);
+    --white: hsl(0,0%,100%);
+    --navy: hsl(230,60%,8%);
+    --red: hsl(343,100%,58%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--white);
+}
+
+span {
+    color: var(--cyan);
+}
+
+section {
+    padding: 0 1.5rem;
+}
+
+.container {
+    background-color: var(--navy);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    padding-bottom: 10.25rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0 4.125rem;
+}
+
+.header {
+    overflow: hidden;
+    padding-bottom: 9rem;
+}
+
+.header-mobile {
+    width: 410px;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+.title {
+    padding: 0 2rem 1.5rem;
+}
+
+.header-text {
+    padding: 0 1.5rem 2rem;
+}
+
+.content-text {
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5.5rem;
+}
+
+.features-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    background-color: var(--blue);
+    border-radius: 40px;
+    max-width: 120px;
+}
+
+.features-img-passion {
+    padding: 22px 24px 22px 30px;
+}
+
+.features-img-financial {
+    padding: 28px 32px;
+}
+
+.features-img-lifestyle {
+    padding: 26px 30px;
+}
+
+.features-img-work {
+    padding: 33px 21px;
+}
+
+.passion-img {
+    height: 80px;
+    width: 66px;
+}
+
+.financial-img {
+    height: 67px;
+    width: 56px;
+}
+
+.lifestyle-img {
+    height: 71px;
+    width: 60px;
+}
+
+.work-img {
+    height: 56px;
+    width: 78px;
+}
+
+.features-title {
+    font-size: 18px;
+    padding-bottom: 0.6875rem;
+}
+
+.features-text {
+    padding-bottom: 3.5rem;
+}
+
+.plans {
+    padding-bottom: 5rem;
+}
+
+.plans-title {
+    padding-bottom: 1.6875rem;
+}
+
+.plans-header {
+    padding-bottom: 3.5rem;
+}
+
+.card-section {
+    padding-top: 1.4375rem;
+}
+
+.card {
+    text-align: left;
+    padding: 3rem 1.875rem 2rem;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.card-free {
+    background-color: var(--blue);
+}
+
+.free-img {
+    position: absolute;
+    top: -1.5rem;
+}
+
+.card-free-title,
+.card-paid-title {
+    padding-bottom: 1.125rem;
+}
+
+.card-free-text {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.card-free-text,
+.card-paid-text {
+    padding-bottom: 1.625rem;
+}
+
+.card-free-pricing {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.card-free-list {
+    list-style-type: none;
+}
+
+.card li {
+    color: var(--white);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.75rem;
+}
+
+.free-tick {
+    color: var(--cyan);
+    padding-right: 0.5rem;
+}
+
+.card-paid {
+    background-color: var(--cyan);
+    color: var(--navy);
+    padding-top: 3.75rem;
+}
+
+.paid-img {
+    position: absolute;
+    top: -2rem;
+}
+
+.card-paid-title,
+.card-paid-text,
+.card-paid-pricing,
+.card-paid-pricing span,
+.card-paid-list li {
+    color: var(--navy);
+}
+
+.card-paid-pricing {
+    font-size: 2.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.card-paid-pricing span {
+    font-size: 1rem;
+    font-weight: 300;
+    vertical-align: super;
+}
+
+.paid-tick {
+    padding-right: 0.5rem;
+}
+
+.signup {
+    background-image: url("../assets/bg-footer-squiggle.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 28.5rem 5rem;
+}
+
+.signup-title {
+    padding: 0 3rem 2rem;
+}
+
+.signup-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    width: 100%;
+    padding: 0.75rem 1.125rem;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 1.5rem;
+}
+
+.email,
+.email::placeholder {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.email::placeholder {
+    opacity: 0.6;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.email-error {
+    margin-bottom: 0;
+    border: 1px solid var(--red);
+}
+
+.error-hidden {
+    font-size: 0.75rem;
+    color: var(--red);
+    padding: 0.25rem 0 0.75rem;
+    display: none;
+}
+
+.error {
+    font-size: 0.75rem;
+    color: var(--red);
+    padding: 0.25rem 0 0.75rem;
+}
+
+.notify {
+    background-color: var(--cyan);
+    color: var(--blue);
+    border: none;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0.75rem 0;
+    border-radius: 40px;
+}
+
+.notify:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid;
+    border-color: var(--cyan);
+}
+
+@media screen and (max-width: 767px) {
+    .header-left,
+    .header-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding-bottom: 6.5625rem;
+    }
+
+    .navbar {
+        justify-content: left;
+        padding-left: 2.4375rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+
+    .header-left,
+    .header-right {
+        width: 314px;
+        overflow: hidden;
+        padding: 0 1rem;
+    }
+
+    .header-left {
+        position: absolute;
+        left: -10.5rem;
+    }
+
+    .header-right {
+        position: absolute;
+        right: -10.5rem;
+    }
+
+    .header-mid {
+        width: 64%;
+        margin: auto;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        background-image: url(../assets/bg-hero-squiggle.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        padding: 0 4rem 1.5rem;
+    }
+
+    .features {
+        margin: 0 auto;
+        padding: 0 6.125rem 8.75rem;
+    }
+
+    .features-box {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .features-content {
+        text-align: left;
+        padding-left: 3.4375rem;
+    }
+
+    .features-passion,
+    .features-lifestyle {
+        padding-left: 3.625rem;
+    }
+
+    .features-financial,
+    .features-work {
+        padding-right: 3.625rem;
+    }
+
+    .plans {
+        padding: 0 6.125rem;
+    }
+
+    .card-flex {
+        margin: 0 3.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    .card {
+        padding-bottom: 3rem;
+    }
+
+    .signup {
+        padding: 1rem 9.125rem 0;
+        background-size: 1022px 140px;
+        background-position: top 0 left -240px;
+    }
+
+    .signup-email {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .email {
+        height: 3rem;
+        width: 20rem;
+    }
+
+    .notify {
+        height: 3rem;
+        width: 8.75rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        padding-bottom: 7.3125rem;
+    }
+
+    .navbar {
+        padding: 5.0625rem 10.3125rem 7.125rem;
+    }
+
+    .header {
+        padding-bottom: 17rem;
+    }
+
+    .header-left {
+        left: -4rem;
+        width: 408px;
+        height: 459px;
+    }
+
+    .header-right {
+        right: -4.5rem;
+        width: 396px;
+        height: 444px;
+    }
+
+    .header-mid {
+        width: 38%;
+        background-position: top 0;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        padding: 0 0 1.5rem;
+    }
+
+    .header-text {
+        font-size: 0.9375rem;
+        padding: 0 0 4rem;
+    }
+
+    .features {
+        flex-direction: row;
+        width: 92%;
+        padding-bottom: 12.625rem;
+    }
+
+    .features-box {
+        flex-direction: column;
+        width: 255px;
+    }
+
+    .features-img {
+        margin-left: 0;
+        margin-bottom: 3rem;
+        max-width: 160px;
+    }
+
+    .features-passion,
+    .features-lifestyle,
+    .features-financial,
+    .features-work {
+        padding: 0;
+    }
+
+    .features-content {
+        padding: 0;
+    }
+
+    .features-img-passion {
+        padding: 29px 32px 29px 40px;
+    }
+    
+    .features-img-financial {
+        padding: 38px 43px;
+    }
+    
+    .features-img-lifestyle {
+        padding: 36px 40px 34px;
+    }
+    
+    .features-img-work {
+        padding: 45px 28px;
+    }
+    
+    .passion-img {
+        height: 106px;
+        width: 88px;
+    }
+    
+    .financial-img {
+        height: 89px;
+        width: 74px;
+    }
+    
+    .lifestyle-img {
+        height: 94px;
+        width: 80px;
+    }
+    
+    .work-img {
+        height: 74px;
+        width: 104px;
+    }
+
+    .features-title {
+        padding-bottom: 1.5rem;
+    }
+
+    .features-financial,
+    .features-work {
+        padding-top: 4.625rem;
+    }
+
+    .plans {
+        padding-bottom: 9.4375rem;
+    }
+
+    .plans-header {
+        width: 45%;
+        margin: auto;
+        padding-bottom: 5.5rem;
+    }
+
+    .plans-title {
+        font-size: 2rem;
+    }
+
+    .card-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 445px;
+    }
+
+    .card-free {
+        height: 425px;
+    }
+
+    .card-paid {
+        height: 449px;
+    }
+
+    .signup {
+        background-size: cover;
+        background-position: center top;
+        padding: 52px 0 13px;
+    }
+
+    .signup-title {
+        font-size: 2rem;
+        padding-bottom: 2.625rem;
+    }
+
+    .email {
+        margin-bottom: 0.25rem;
+    }
+
+}
