@@ -416,9 +416,9 @@ section {
     }
 
     .signup {
-        padding: 1rem 9.125rem 0;
-        background-size: 1022px 140px;
-        background-position: top 0 left -240px;
+        padding: 1rem 9.125rem;
+        background-size: contain;
+        background-position: center center;
     }
 
     .signup-email {
@@ -484,7 +484,7 @@ section {
 
     .features {
         flex-direction: row;
-        width: 92%;
+        max-width: 100rem;
         padding-bottom: 12.625rem;
     }
 
@@ -591,9 +591,9 @@ section {
     }
 
     .signup {
-        background-size: cover;
+        background-size: contain;
         background-position: center top;
-        padding: 52px 0 13px;
+        padding: 3.25rem 0;
     }
 
     .signup-title {
